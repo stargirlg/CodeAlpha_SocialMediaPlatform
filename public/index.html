@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeAlpha Connect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>CodeAlpha Connect</h1>
+    <div id="auth-section">
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button onclick="login()">Login</button>
+      <button onclick="register()">Register</button>
+      <span id="user-display"></span>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Create Post Section -->
+    <div class="create-post-card">
+      <h3>Share an Update</h3>
+      <textarea id="post-content" placeholder="What's on your mind?"></textarea>
+      <button onclick="createPost()">Publish Post</button>
+    </div>
+
+    <!-- Live Feed -->
+    <h2>Community Feed</h2>
+    <div id="feed"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
